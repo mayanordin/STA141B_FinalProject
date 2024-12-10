@@ -12,6 +12,7 @@ layout: default
 **Professor:** Peter Kramlinger  
 **Date:** December 7th, 2024  
 **By:** Maya Nordin and Ruba Thekkath  
+![Image for Title](https://www.talentlms.com/blog/wp-content/uploads/2022/09/remote-work-vs-work-from-home.png)
 
 ---
 
