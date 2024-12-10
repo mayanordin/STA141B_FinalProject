@@ -15,16 +15,16 @@ layout: default
 
 ---
 
-### Abstract
+### I. Abstract
 This paper explores the economic implications of remote work and hybrid models in the contemporary job market. Our research involves collecting data through web scraping and API integration from prominent job platforms such as LinkedIn and Indeed. By analyzing trends across various industries, we aim to assess how the demand for specific roles evolves within these sectors. Key areas of focus include salary distribution, geographic location, job industry, and the frequency of job postings, with a comparative lens on remote, hybrid, and in-office roles. To convey our findings effectively, we will employ data visualizations, including maps highlighting regions where remote and hybrid work are prevalent and graphs illustrating trends in salary, location, and job frequency. Through meticulous data organization and analysis, this study seeks to provide actionable insights into the economic trends driven by evolving work models. Our findings will contribute to a deeper understanding of the shifting employment landscape in a post-pandemic era.
 
-### Introduction
+### II. Introduction
 The shifting dynamics of the job market occur continuously, redefining traditional employment structures and influencing job postings, hiring practices, and salary trends. These changes significantly impact the labor market, reshaping job opportunities and economic patterns across industries and regions. Understanding these trends is crucial, as they influence not only individual roles but also broader economic factors such as regional employment rates and industry specific demand. This study aims to analyze these patterns, providing insights into how the evolving job market is shaping economic growth and workforce dynamics.
 
-### Data Sources
+### III. Data Sources
 The data sets we will be using come from the following job boards: LinkedIn and Indeed. From each job board we collected the job title, the company the job belongs to, location, salary, and mode (remote, hybrid or in person). 
 
-### Methodology
+### IV. Methodology
 ### Web Scraping LinkedIn
 To collect job data from LinkedIn, our initial approach was to explore the use of an API. However, we quickly realized that LinkedIn's API is exclusively available for professional business purposes, limiting its accessibility for projects like ours. With this limitation in mind, we decided to attempt web scraping as an alternative method to gather the required data.
 
@@ -58,8 +58,7 @@ We added two new columns: ‘Lower Range’ and ‘Upper Range’, corresponding
 To understand the distribution of mean salaries, we plotted a histogram. The distribution was found to be highly right-skewed, indicating the presence of extreme values (outliers) on the higher end of the salary scale. Given this skewness, the median was deemed a more appropriate measure of central tendency than the mean for calculations involving industry or state-level salary averages. Thus, median values were used in subsequent analyses to represent average salaries more accurately.
 
 
-
-### Challenges 
+### V. Challenges 
 ### Linkedin 
 The main challenges we faced were through web scraping and getting all the job data. The first issue we had was finding a way to access LinkedIn properly. We were able to get the chrome driver open, and open a separate chrome browser, but in order to use the search option, we needed to log in. First we tried using the guest option and searching through jobs there, but after the jobs loaded it would ask to either login or verify we weren’t a robot. In order to solve this problem, we ended up creating a new LinkedIn account to use in order to web scrape and were able to get through the login by implementing code that allowed for our username and password for the new LinkedIn account to be submitted. 
 
@@ -70,8 +69,10 @@ Scraping data from Indeed was an incredibly complex and time consuming process d
 
 Then, the next challenge was designing a scraping pipeline capable of navigating through multiple pages efficiently, so that we could cover many more pages. While the code initially worked for individual pages, it frequently ran into CAPTCHA verifications after scraping 2 to 3 pages, which would halt the process entirely. To continue, we had to do a lot of debugging so that we did not have to manually identify the exact page where the scraper stopped, and then start the process all over again by entering the URL and resume scraping from there. From there, we were able to easily collect multiple pages of data without many issues. The combination of technical issues, constant monitoring, and iterative debugging made the task incredibly challenging and required relentless attention to detail to gather our data, but after spending hours on debugging and writing code, we were able to successfully collect over 5000+ rows of data
 
+### VI. Findings
 
-### Findings 
+
+### VII. Analysis 
 
 Figure 4 reveals the distribution of job availability across different industries. Industries like technology, business, and healthcare generally have the highest job frequencies, indicating these sectors are driving much of the job market. On the other hand, industries like retail and manufacturing appear to have significantly fewer job listings, suggesting either lower demand or a more stabilized workforce in these sectors. 
 
@@ -81,12 +82,12 @@ Additionally, Figure 6 graph highlights the proportion of job modes (e.g., remot
 
 Lastly, the salary map indicates that states like California, New York, and Washington offer the highest average salaries, often tied to their concentration of high-paying industries such as tech and finance. Meanwhile, states in the Midwest and South generally offer lower average salaries, reflecting regional economic disparities. Interestingly, some states with a lower cost of living may still provide competitive salaries in niche industries, presenting unique opportunities for job seekers.
 
-### Conclusions 
+### VIII. Conclusions 
 
 The data provides valuable insights for various stakeholders in the job market. For job seekers, understanding the frequency of jobs by industry and geographic distribution enables more informed decisions about career paths, relocation, or remote work opportunities, aligning their skills with sectors in high demand. Employers can use these findings to refine hiring strategies, such as offering competitive salaries in regions with lower pay or enhancing flexibility in states with high percentages of remote work to attract top talent. Policymakers can address regional economic disparities by investing in job creation programs for underrepresented industries or promoting remote work infrastructure in less populated areas to bridge workforce gaps. On a societal level, these insights emphasize the growing importance of flexible work models and the role of emerging industries in driving economic growth. By utilizing this information, individuals and institutions can contribute to equitable job access, competitive compensation, and a resilient workforce.
 
 
-### Limitations & Further Research 
+### IX. Limitations & Further Research 
 As for limitations, the scope of data used in this study is confined to specific industries, regions, and time periods, which may not fully capture the broader trends across the entire job market. Additionally, job boards such as LinkedIn and Indeed are designed to tailor search results based on factors like location, industry, and user preferences. This could have introduced biases in the data we scraped, as job postings may not reflect the broader, global job market.
 For future research, there are several potential directions. Expanding the dataset to include a wider variety of industries, regions, and timeframes could provide a more comprehensive understanding of the trends in remote and hybrid work models. Additionally, collecting data over more frequent time intervals, such as weekly or monthly, would allow for a more detailed analysis of how job market trends evolve over time. Such longitudinal studies could help capture dynamic shifts and emerging patterns that are crucial for understanding long term changes in the labor market.
 
