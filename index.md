@@ -144,6 +144,7 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
 <a href="https://mayanordin.github.io/STA141B_FinalProject/percent_job_modes.html">
     <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
+
 <img width="769" alt="Screenshot 2024-12-10 at 1 03 52 PM" src="https://github.com/user-attachments/assets/6518fdc4-12c7-40cc-aacd-246fb5e290fd">
 
 <a href="https://mayanordin.github.io/STA141B_FinalProject/salary_map-2.html">
