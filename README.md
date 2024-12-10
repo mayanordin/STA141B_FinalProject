@@ -1,4 +1,4 @@
-# STA141B_FinalProject
+# STA141B FinalProject - Dec 2024
 ---
 title: "Economic Impact of Job Market Trends and Work Models"
 author: "Maya Nordin and Ruba Thekkath"
@@ -81,8 +81,9 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
 
 <img width="952" alt="Screenshot 2024-12-10 at 11 31 41 AM" src="https://github.com/user-attachments/assets/867719a7-b003-484f-b6a8-a80520d55dde">
 
-[![View Visualization](https://img.shields.io/badge/View-Visualization-blue)](https://mayanordin.github.io/STA141B_FinalProject/map_job_count.html)
-
+<a href="https://mayanordin.github.io/STA141B_FinalProject/map_job_count.html">
+    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
+</a>
 
 
 
