@@ -1,4 +1,5 @@
 # STA141B FinalProject - Dec 2024
+
 ---
 title: "Economic Impact of Job Market Trends and Work Models"
 author: "Maya Nordin and Ruba Thekkath"
@@ -76,8 +77,9 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
 ### VI. Findings
 <img width="1212" alt="Screenshot 2024-12-10 at 11 31 17 AM" src="https://github.com/user-attachments/assets/b937b6f1-b4b9-476e-a465-2f979e698ea6">
 
-[![View Visualization](https://img.shields.io/badge/View-Visualization-blue)](https://mayanordin.github.io/STA141B_FinalProject/bar_freq_jobs.html)
-
+<a href="https://mayanordin.github.io/STA141B_FinalProject/bar_freq_jobs.html">
+    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
+</a>
 
 <img width="952" alt="Screenshot 2024-12-10 at 11 31 41 AM" src="https://github.com/user-attachments/assets/867719a7-b003-484f-b6a8-a80520d55dde">
 
@@ -85,17 +87,17 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
     <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
 
-
-
 <img width="1291" alt="Screenshot 2024-12-10 at 11 32 05 AM" src="https://github.com/user-attachments/assets/6238ebdc-2d1e-4d96-9ff8-bf0c8ca23d4e">
 
-[![View Visualization](https://img.shields.io/badge/View-Visualization-blue)](https://mayanordin.github.io/STA141B_FinalProject/percent_job_modes.html)
-
+<a href="https://mayanordin.github.io/STA141B_FinalProject/percent_job_modes.html">
+    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
+</a>
 
 <img width="1067" alt="Screenshot 2024-12-10 at 11 32 23 AM" src="https://github.com/user-attachments/assets/973fa60e-7a8d-4626-86c0-4b8ca397192f">
 
-[![View Visualization](https://img.shields.io/badge/View-Visualization-blue)](https://mayanordin.github.io/STA141B_FinalProject/salary_map-2.html)
-
+<a href="https://mayanordin.github.io/STA141B_FinalProject/salary_map-2.html">
+    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
+</a>
 
 
 ### VII. Analysis 
