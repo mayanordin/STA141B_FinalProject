@@ -1,12 +1,5 @@
 # STA141B FinalProject - Dec 2024
 
----
-title: "Economic Impact of Job Market Trends and Work Models"
-author: "Maya Nordin and Ruba Thekkath"
-date: "December 7, 2024"
-layout: default
----
-
 # Economic Impact of Job Market Trends and Work Models  
 
 **STA 141B Final Project**  
