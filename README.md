@@ -1,20 +1,53 @@
-# Economic Impact of Job Market Trends and Work Models  
+# **Economic Impact of Job Market Trends and Work Models**
 
 **STA 141B Final Project**  
 **Professor:** Peter Kramlinger  
-**Date:** December 7th, 2024  
-**By:** Maya Nordin and Ruba Thekkath 
+**Date:** December 7, 2024  
+**Authors:** Maya Nordin and Ruba Thekkath  
 
-### Here are the descriptions for the files above: 
+---
 
-1. **Final_Dataset.csv:** The final dataset after cleaning, merging, and deriving new columns. Contains a total of 10,234 rows of data.  
-2. **Generating_URLS_Indeed.ipynb:** Code used to generate random combinations of URLS (job title, location, salary, mode of work) to be used in scraping Indeed to have a more diverse dataset. 
-3. **Merging.ipynb:** Code for merging, cleaning, and adding new columns to the datasets. Also includes all the code for generating all interactive plots (in the report). 
-4. **Scraping_Indeed.ipynb:** Code for web scraping Indeed. 
-5. **Scraping_LinkedIn.ipynb:** Code for web scraping LinkedIn. 
-6. **bar_freq_jobs.html:** Interactive bar plot that shows the job frequency per Industry. 
-7. **index.md:** Final Report   
-8. **map_job_count.html:** Interactive map of job count per state. 
-9. **percent_job_model.html:** Interactive frequency plot of job modes per state. 
-10. **salary_map-2.html:** Interactive map of median salary per state. 
-    
+## **File Descriptions**
+
+### **Datasets**  
+1. **`Final_Dataset.csv`**  
+   - The final dataset after cleaning, merging, and deriving new columns.  
+   - Contains a total of **10,234 rows** of data.
+
+---
+
+### **Code Notebooks**  
+2. **`Generating_URLS_Indeed.ipynb`**  
+   - Generates random combinations of URLs (job title, location, salary, mode of work).  
+   - These URLs were used to scrape Indeed, ensuring a more diverse dataset.  
+
+3. **`Merging.ipynb`**  
+   - Merges, cleans, and adds new columns to the datasets.  
+   - Includes code for generating all interactive plots featured in the report.  
+
+4. **`Scraping_Indeed.ipynb`**  
+   - Contains the code for web scraping job data from **Indeed**.  
+
+5. **`Scraping_LinkedIn.ipynb`**  
+   - Contains the code for web scraping job data from **LinkedIn**.  
+
+---
+
+### **Interactive Visualizations**  
+6. **`bar_freq_jobs.html`**  
+   - Interactive bar plot showing job frequency per **industry**.  
+
+7. **`map_job_count.html`**  
+   - Interactive map displaying job counts per **state**.  
+
+8. **`percent_job_model.html`**  
+   - Interactive frequency plot of job modes (e.g., remote, hybrid) per **state**.  
+
+9. **`salary_map-2.html`**  
+   - Interactive map of median **salary** per state.  
+
+---
+
+### **Final Report**  
+10. **`index.md`**  
+    - The complete project report, summarizing methodology, analysis, and conclusions.
