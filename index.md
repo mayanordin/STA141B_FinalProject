@@ -150,6 +150,7 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
 ### VII. Analysis 
 
 <div align="justify">
+    
 Figure 4 reveals the distribution of job availability across different industries. Industries like technology, business, and healthcare generally have the highest job frequencies, indicating these sectors are driving much of the job market. On the other hand, industries like retail and manufacturing appear to have significantly fewer job listings, suggesting either lower demand or a more stabilized workforce in these sectors. 
 
 <br>
