@@ -102,6 +102,7 @@ To understand the distribution of mean salaries, we plotted a histogram. The dis
 ### Linkedin 
 
 <div align="justify">
+    
 The main challenges we faced were through web scraping and getting all the job data. The first issue we had was finding a way to access LinkedIn properly. We were able to get the chrome driver open, and open a separate chrome browser, but in order to use the search option, we needed to log in. First we tried using the guest option and searching through jobs there, but after the jobs loaded it would ask to either login or verify we weren’t a robot. In order to solve this problem, we ended up creating a new LinkedIn account to use in order to web scrape and were able to get through the login by implementing code that allowed for our username and password for the new LinkedIn account to be submitted. 
 
 <br>
@@ -112,6 +113,7 @@ Another issue we had was getting our data. In the beginning we did not know that
 ### Indeed
 
 <div align="justify">
+    
 Scraping data from Indeed was an incredibly complex and time consuming process due to the strong restrictions imposed by the website. Initially, we tried to manually scrape the page, but given the restrictions that were put up we were unable to do so, so we decided to use Selenium. We encountered major issues with the web driver setup, as the popup browser failed to function correctly, requiring a lot of debugging and repeated adjustments to Chrome versions we had in our computers. Once resolved, we had code that could scrape a single page accurately. 
 
 <br>
