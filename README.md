@@ -1,6 +1,5 @@
-# STA141B FinalProject - Dec 2024
-
 # Economic Impact of Job Market Trends and Work Models  
+### STA141B FinalProject - Dec 2024
 
 **STA 141B Final Project**  
 **Professor:** Peter Kramlinger  
