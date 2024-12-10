@@ -128,7 +128,7 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
     <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
 
-<img width="952" alt="Screenshot 2024-12-10 at 11 31 41 AM" src="https://github.com/user-attachments/assets/867719a7-b003-484f-b6a8-a80520d55dde">
+<img width="769" alt="Screenshot 2024-12-10 at 11 31 41 AM" src="https://github.com/user-attachments/assets/867719a7-b003-484f-b6a8-a80520d55dde">
 
 <a href="https://mayanordin.github.io/STA141B_FinalProject/map_job_count.html">
     <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
@@ -139,8 +139,7 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
 <a href="https://mayanordin.github.io/STA141B_FinalProject/percent_job_modes.html">
     <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
-
-<img width="1067" alt="Screenshot 2024-12-10 at 11 32 23 AM" src="https://github.com/user-attachments/assets/973fa60e-7a8d-4626-86c0-4b8ca397192f">
+<img width="769" alt="Screenshot 2024-12-10 at 1 03 52 PM" src="https://github.com/user-attachments/assets/6518fdc4-12c7-40cc-aacd-246fb5e290fd">
 
 <a href="https://mayanordin.github.io/STA141B_FinalProject/salary_map-2.html">
     <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
