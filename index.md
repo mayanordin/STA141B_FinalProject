@@ -7,9 +7,10 @@
 ![Image for Title](https://www.talentlms.com/blog/wp-content/uploads/2022/09/remote-work-vs-work-from-home.png)
 
 ---
-
+<div align="justify">
 ### I. Abstract
 This paper explores the economic implications of remote work and hybrid models in the contemporary job market. Our research involves collecting data through web scraping and API integration from prominent job platforms such as LinkedIn and Indeed. By analyzing trends across various industries, we aim to assess how the demand for specific roles evolves within these sectors. Key areas of focus include salary distribution, geographic location, job industry, and the frequency of job postings, with a comparative lens on remote, hybrid, and in-office roles. To convey our findings effectively, we will employ data visualizations, including maps highlighting regions where remote and hybrid work are prevalent and graphs illustrating trends in salary, location, and job frequency. Through meticulous data organization and analysis, this study seeks to provide actionable insights into the economic trends driven by evolving work models. Our findings will contribute to a deeper understanding of the shifting employment landscape in a post-pandemic era.
+</div>
 
 ### II. Introduction
 The shifting dynamics of the job market occur continuously, redefining traditional employment structures and influencing job postings, hiring practices, and salary trends. These changes significantly impact the labor market, reshaping job opportunities and economic patterns across industries and regions. Understanding these trends is crucial, as they influence not only individual roles but also broader economic factors such as regional employment rates and industry specific demand. This study aims to analyze these patterns, providing insights into how the evolving job market is shaping economic growth and workforce dynamics.
