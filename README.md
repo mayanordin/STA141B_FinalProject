@@ -81,8 +81,20 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
 
 <img width="952" alt="Screenshot 2024-12-10 at 11 31 41 AM" src="https://github.com/user-attachments/assets/867719a7-b003-484f-b6a8-a80520d55dde">
 
+[![View Visualization](https://img.shields.io/badge/View-Visualization-blue)](https://mayanordin.github.io/STA141B_FinalProject/map_job_count.html)
+
+
+
+
 <img width="1291" alt="Screenshot 2024-12-10 at 11 32 05 AM" src="https://github.com/user-attachments/assets/6238ebdc-2d1e-4d96-9ff8-bf0c8ca23d4e">
+
+[![View Visualization](https://img.shields.io/badge/View-Visualization-blue)](https://mayanordin.github.io/STA141B_FinalProject/percent_job_modes.html)
+
+
 <img width="1067" alt="Screenshot 2024-12-10 at 11 32 23 AM" src="https://github.com/user-attachments/assets/973fa60e-7a8d-4626-86c0-4b8ca397192f">
+
+[![View Visualization](https://img.shields.io/badge/View-Visualization-blue)](https://mayanordin.github.io/STA141B_FinalProject/salary_map-2.html)
+
 
 
 ### VII. Analysis 
