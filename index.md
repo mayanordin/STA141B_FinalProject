@@ -26,30 +26,34 @@ The data sets we will be using come from the following job boards: LinkedIn and 
 ### Web Scraping LinkedIn
 <div align="justify">
 To collect job data from LinkedIn, our initial approach was to explore the use of an API. However, we quickly realized that LinkedIn's API is exclusively available for professional business purposes, limiting its accessibility for projects like ours. With this limitation in mind, we decided to attempt web scraping as an alternative method to gather the required data.
-</div>
 
-<div align="justify">
+<br>
+
 Our initial strategy for web scraping involved manual extraction. Using the "Inspect" option in Chrome, we attempted to access the HTML structure of LinkedIn's job postings. This would allow us to identify and extract specific XPaths corresponding to key job details such as job title, location, salary, and work mode (e.g., remote or hybrid). However, we found LinkedIn's strict Terms of Service explicitly prohibit web scraping. Continuing with this approach posed a risk of violating their policies, potentially resulting in our IP address being banned or other penalties.
-</div>
 
-<div align="justify">
+<br>
+
+
 Recognizing these risks, we had to reconsider our data collection strategy to ensure compliance with LinkedIn’s guidelines while still achieving our project goals. This setback highlighted the importance of adhering to ethical and legal practices when dealing with online platforms.
-</div>
+
+<br>
 
 
-<div align="justify">
 To address our data collection needs, we utilized Selenium and Beautiful Soup for web scraping. Selenium enabled us to launch and control its own Chrome browser to interact with LinkedIn, while Beautiful Soup served as an HTML parser to extract the desired information. To begin, we downloaded the appropriate Chrome WebDriver and saved it to our desktop for integration with Selenium.
-</div>
 
-<div align="justify">
+<br>
+
+
 Next, we navigated to LinkedIn and conducted job searches using the platform's toolbar. Our focus was on collecting data from specific industries within the United States, including Financial Services, Software Development, IT Services and Consulting, Hospitals and Health, Retail, Staffing and Recruiting, Truck Transportation, Construction, Civil Engineering, and Medical Practices. For each industry, we applied filters to target jobs with a minimum salary of $40,000, across all experience levels, and in any work mode (remote, hybrid, or in-person).
-</div>
 
-<div align="justify">
+<br>
+
+
 We generated a total of 10 unique URLs, one for each industry, and used the Selenium WebDriver to open a browser instance for each link. From there, we iteratively scraped the job listings on each page. On average, each industry provided between 500 and 900 job postings. After consolidating the data from all industries, we successfully compiled a dataset containing 8,223 rows of job information. This took about 9 hours to get all the data as when using the Chrome Driver we needed to manually scroll through all the jobs so the website downloaded, meaning we could not leave the code running on its own. This process ensured we captured a broad and diverse range of job data, laying the groundwork for further analysis and insights into industry-specific trends. 
-</div>
 
-<div align="justify">
+<br>
+
+
 After retrieving the data, we utilized Pandas in order to store the data as a data frame with job title, job name, job location, job salary and job mode. This data frame would be used to merge with Indeed for further cleaning and plotting. 
 </div>
 
