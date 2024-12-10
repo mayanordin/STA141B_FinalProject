@@ -51,6 +51,9 @@ On top of that, to make sure we could add variety in terms of the jobs we were s
 
 ### Combining and Cleaning Data Set 
 In order to combine the dates, we ensured that we had the same exact column names, ordering, and data types, and merged the datasets. Then, since we were scraping popular job boards, we wanted to make sure there were no duplicates, so after filtering for duplicates, we had a total of 10,234 rows of data. 
+<img width="1164" alt="original_data_preclean" src="https://github.com/user-attachments/assets/4de260a1-2b7c-4ef7-afca-ef717cdf5c53">
+<img width="621" alt="final_dataset" src="https://github.com/user-attachments/assets/0cea2a78-d3ae-4124-be64-b048786ee7e2">
+
 
 ### Salary
 In our initial dataset, the salary information column was unstructured and required significant cleaning. Salaries were provided in ranges, such as "$131.4K/yr - $154.4K/yr" or "$20/hr - $30/hr." Additionally, some job entries included non-salary components, such as "401K" or "Medical/Vision" benefits. The salary information was stored as strings rather than numeric data, which complicated quantitative analysis. To focus solely on salary for comparing industries and job roles, we developed a function to extract numerical data. For salary ranges, the lower and upper bounds were recorded as numerical values (e.g., 131.4 and 154.4 for the example above). For hourly salaries, we converted the values to annual estimates using the formula:
