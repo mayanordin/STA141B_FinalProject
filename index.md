@@ -25,7 +25,7 @@ The shifting dynamics of the job market occur continuously, redefining tradition
 
 ### III. Data Sources
 <div align="justify">
-The datasets we will be using come from the following job boards: LinkedIn and Indeed. From each job board, we collected the most recent job listings (as of Novemeber 2024), extracting the job title, company, location, salary, and work mode (remote, hybrid, or in-person).
+The datasets we will be using come from the following job boards: LinkedIn and Indeed. From each job board, we collected the most recent job listings (as of November 2024), extracting the job title, company, location, salary, and work mode (remote, hybrid, or in-person).
 </div>
 
 ### IV. Methodology
