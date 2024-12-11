@@ -4,7 +4,10 @@
 **Professor:** Peter Kramlinger  
 **Date:** December 11th, 2024  
 **By:** Maya Nordin and Ruba Thekkath  
+
+<div align="center">
 <img src="https://www.talentlms.com/blog/wp-content/uploads/2022/09/remote-work-vs-work-from-home.png" alt="Image for Title" width="500">
+</div>
 
 ---
 ### I. Abstract
@@ -79,7 +82,7 @@ Yearly Salary = Hourly Rate 40 hours/week x 52 weeks/year
 We added two new columns: ‘Lower Range’ and ‘Upper Range’, corresponding to the minimum and maximum salaries. We then computed the mean salary for each job entry by averaging these two values and stored the results in a new column, ‘Mean Salary’.
 <br><br>
 <div style="text-align: center;">
-    <img width="500" alt="Screenshot 2024-12-10 at 3 31 32 PM" src="https://github.com/user-attachments/assets/ace6a103-b1b0-4e6d-ac52-d159ae7a9786">
+    <img width="400" alt="Screenshot 2024-12-10 at 3 31 32 PM" src="https://github.com/user-attachments/assets/ace6a103-b1b0-4e6d-ac52-d159ae7a9786">
 </div>
 To understand the distribution of mean salaries, we plotted a histogram. The distribution was found to be highly right-skewed, indicating the presence of extreme values (outliers) on the higher end of the salary scale. Given this skewness, the median was deemed a more appropriate measure of central tendency than the mean for calculations involving industry or state-level salary averages. Thus, median values were used in subsequent analyses to represent average salaries more accurately.
 </div>
@@ -106,7 +109,7 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
 ### VI. Findings
 <p><b>Figure 4:</b> Frequency of Jobs in Each Industry </p>
 <div style="text-align: center;">
-<img width="900" alt="Screenshot 2024-12-10 at 11 31 17 AM" src="https://github.com/user-attachments/assets/b937b6f1-b4b9-476e-a465-2f979e698ea6">
+<img width="800" alt="Screenshot 2024-12-10 at 11 31 17 AM" src="https://github.com/user-attachments/assets/b937b6f1-b4b9-476e-a465-2f979e698ea6">
 </div>
 
 <a href="https://mayanordin.github.io/STA141B_FinalProject/bar_freq_jobs.html">
@@ -123,7 +126,10 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
 </a>
 <br><br>
 <p><b>Figure 6:</b> Percentage of Job Modes per State </p>
-<img width="900" alt="Screenshot 2024-12-10 at 11 32 05 AM" src="https://github.com/user-attachments/assets/6238ebdc-2d1e-4d96-9ff8-bf0c8ca23d4e">
+
+<div align="center">
+<img width="800" alt="Screenshot 2024-12-10 at 11 32 05 AM" src="https://github.com/user-attachments/assets/6238ebdc-2d1e-4d96-9ff8-bf0c8ca23d4e">
+</div>
 
 <a href="https://mayanordin.github.io/STA141B_FinalProject/percent_job_modes.html">
     <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="100">
