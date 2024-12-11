@@ -51,3 +51,10 @@
 ### **Final Report**  
 10. **`index.md`**  
     - The complete project report, summarizing methodology, analysis, and conclusions.
+   
+
+### Contributions:
+
+Maya - Webscraped LinkedIn, helped merge and clean data sets, created interactive maps and plots, and aided in the process of writing the final report on Github.
+
+Ruba - Webscraped Indeed, helped merge and clean data sets, created tables and interactive plots, uploaded code files to Github and aided in process of writing final report on Github.
