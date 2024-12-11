@@ -44,7 +44,7 @@ After retrieving the data, we utilized Pandas in order to store the data as a da
 ### Web Scraping Indeed 
 
 <div align="justify">
-In order to scrape Indeed overall, we utilized Selenium to automate the process of extracting job listings from the website. Initially, we attempted manual scraping by directly accessing the website's HTML structure to collect data, but this approach proved ineffective due to dynamic content loading and anti-scraping measures that blocked our efforts. 
+In order to scrape Indeed overall, we utilized Selenium (similarly to LinkedIn) to automate the process of extracting job listings from the website. Initially, we attempted manual scraping by directly accessing the website's HTML structure to collect data, but this approach proved ineffective due to dynamic content loading and anti-scraping measures that blocked our efforts. 
 <br><br>
 As a result, we pivoted to using Selenium, which allowed us to set up a Chrome browser instance through the Selenium WebDriver. This automated browser navigates to a specified URL and collects data on job postings, including the company name, job location, job title, and salary information. For each job listing, we extracted details using HTML class names and CSS selectors, while also implementing exception handling for scenarios where certain elements, such as salary information, were missing. This method proved to be more reliable than manual scraping, though it still presented significant challenges due to website restrictions. 
 <br><br>
@@ -56,18 +56,35 @@ On top of that, to make sure we could add variety in terms of the jobs we were s
 ### Combining and Cleaning Data Set 
 
 <div align="justify">
-In order to combine the dates, we ensured that we had the same exact column names, ordering, and data types, and merged the datasets. Then, since we were scraping popular job boards, we wanted to make sure there were no duplicates, so after filtering for duplicates, we had a total of 10,234 rows of data. 
+To combine the two datasets (one from LinkedIn and the other from Indeed), we first made sure that both datasets were aligned in terms of their structure. This meant that the column names were the same, the order of columns was consistent, and the data types (e.g., numbers, text) matched for corresponding columns in both datasets. Once the datasets were standardized in this way, we merged them into one unified dataset.
+<br><br>
+After merging the datasets, we realized that some job entries might appear in both datasets (since both are popular job boards). To avoid counting the same job multiple times, we removed duplicate entries. After filtering out the duplicates, we ended up with a final dataset containing 10,234 unique rows of data.
 </div>
 <br><br>
 <div align="center">
     <img width="1265" alt="Original Data Pre-Clean" src="https://github.com/user-attachments/assets/4de260a1-2b7c-4ef7-afca-ef717cdf5c53">
-    <p><b>Figure 1:</b> Original Dataset after web scraping, cleaning, & merging </p>
+    <p><b>Figure 1:</b> Original Dataset * </p>
 </div>
 
 <div align="center">
     <img width="1265" alt="Original Data Pre-Clean" src="https://github.com/user-attachments/assets/0cea2a78-d3ae-4124-be64-b048786ee7e2">
-    <p><b>Figure 2:</b> Final Dataset </p>
+    <p><b>Figure 2:</b> Final Dataset** </p>
 </div>
+*Note: Our original dataset after merging Indeed and LinkedIn 
+<br><br>
+**Note: Our final dataset after cleaning and creating new columns adhering to visualizations 
+
+### Industry
+While there are many industries represented in the job data, we chose to focus our analysis on the following key industries: law, business, tech, health, retail, education, manufacturing, and media while including an "other" category for jobs that did not fit into these classifications. These categories chosen represent diverse and economically significant industries, ranging from high-skill professions to essential services and consumer-driven roles. Analyzing these sectors provides meaningful insights into hiring trends, skill demands, and economic health across various domains.
+<br><br>
+To categorize the jobs, we developed a keyword-based sorting approach. For example, roles in tech were identified using terms like "engineer" and "developer," while manufacturing jobs were categorized using words such as "factory" and "production." Similar keyword strategies were applied for other industries to ensure consistent classification.
+<br><br>
+After applying these criteria, we reviewed various results to address any misclassifications and refine our methodology. This process ensured that the dataset was well-structured for meaningful analysis and industry-specific insights.
+
+### Mode of Work 
+In the original LinkedIn dataset, there was a "mode of work" column indicating whether a job was in-person, remote, or hybrid. However, this column was removed to facilitate merging with the Indeed dataset, as the Indeed data did not include information about the mode of work, nor did we scrape that information from their website.
+<br><br>
+To analyze whether jobs were in-person, remote, or hybrid after merging the datasets, we reintroduced the "mode of work" column, ensuring the data corresponded accurately to each job listing. For the Indeed jobs, we created a function to infer the mode of work: if the "location" column contained a specific address, the job was categorized as in-person, whereas if it indicated "remote," the job was classified as remote. This approach allowed us to standardize the mode of work data across the merged dataset.
 
 ### Salary
 
@@ -85,6 +102,8 @@ We added two new columns: ‘Lower Range’ and ‘Upper Range’, corresponding
 To understand the distribution of mean salaries, we plotted a histogram. The distribution was found to be highly right-skewed, indicating the presence of extreme values (outliers) on the higher end of the salary scale. Given this skewness, the median was deemed a more appropriate measure of central tendency than the mean for calculations involving industry or state-level salary averages. Thus, median values were used in subsequent analyses to represent average salaries more accurately.
 </div>
 
+
+<
 ### V. Challenges 
 ### Linkedin 
 
