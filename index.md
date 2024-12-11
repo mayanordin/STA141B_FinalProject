@@ -2,7 +2,7 @@
 
 **STA 141B Final Project**  
 **Professor:** Peter Kramlinger  
-**Date:** December 7th, 2024  
+**Date:** December 11th, 2024  
 **By:** Maya Nordin and Ruba Thekkath  
 ![Image for Title](https://www.talentlms.com/blog/wp-content/uploads/2022/09/remote-work-vs-work-from-home.png)
 
@@ -74,10 +74,13 @@ In order to combine the dates, we ensured that we had the same exact column name
     
 In our initial dataset, the salary information column was unstructured and required significant cleaning. Salaries were provided in ranges, such as "$131.4K/yr - $154.4K/yr" or "$20/hr - $30/hr." Additionally, some job entries included non-salary components, such as "401K" or "Medical/Vision" benefits. The salary information was stored as strings rather than numeric data, which complicated quantitative analysis. To focus solely on salary for comparing industries and job roles, we developed a function to extract numerical data. For salary ranges, the lower and upper bounds were recorded as numerical values (e.g., 131.4 and 154.4 for the example above). For hourly salaries, we converted the values to annual estimates using the formula:
 <br><br>
-Yearly Salary = Hourly Rate 40 hours/week  52 weeks/year
+Yearly Salary = Hourly Rate 40 hours/week x 52 weeks/year
 <br><br>
 We added two new columns: ‘Lower Range’ and ‘Upper Range’, corresponding to the minimum and maximum salaries. We then computed the mean salary for each job entry by averaging these two values and stored the results in a new column, ‘Mean Salary’.
 <br><br>
+<p><b>Figure 3:</b> Histogram of Salary Means </p>
+<img width="500" alt="Screenshot 2024-12-10 at 3 31 32 PM" src="https://github.com/user-attachments/assets/ace6a103-b1b0-4e6d-ac52-d159ae7a9786">
+
 To understand the distribution of mean salaries, we plotted a histogram. The distribution was found to be highly right-skewed, indicating the presence of extreme values (outliers) on the higher end of the salary scale. Given this skewness, the median was deemed a more appropriate measure of central tendency than the mean for calculations involving industry or state-level salary averages. Thus, median values were used in subsequent analyses to represent average salaries more accurately.
 </div>
 
@@ -101,7 +104,7 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
 </div>
 
 ### VI. Findings
-<p><b>Figure 3:</b> Frequency of Jobs in Each Industry </p>
+<p><b>Figure 4:</b> Frequency of Jobs in Each Industry </p>
 <div style="text-align: center;">
 <img width="1212" alt="Screenshot 2024-12-10 at 11 31 17 AM" src="https://github.com/user-attachments/assets/b937b6f1-b4b9-476e-a465-2f979e698ea6">
 </div>
@@ -110,7 +113,7 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
     <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
 <br><br>
-<p><b>Figure 4:</b> Map of Number of Jobs Per State </p>
+<p><b>Figure 5:</b> Map of Number of Jobs Per State </p>
 <div style="text-align: center;">
 <img width="900" alt="Screenshot 2024-12-10 at 11 31 41 AM" src="https://github.com/user-attachments/assets/867719a7-b003-484f-b6a8-a80520d55dde">
 </div>
@@ -119,14 +122,14 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
     <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
 <br><br>
-<p><b>Figure 5:</b> Percentage of Job Modes per State </p>
+<p><b>Figure 6:</b> Percentage of Job Modes per State </p>
 <img width="1291" alt="Screenshot 2024-12-10 at 11 32 05 AM" src="https://github.com/user-attachments/assets/6238ebdc-2d1e-4d96-9ff8-bf0c8ca23d4e">
 
 <a href="https://mayanordin.github.io/STA141B_FinalProject/percent_job_modes.html">
     <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
 <br><br> 
-<p><b>Figure 6:</b> Map of Median Salary per State </p>
+<p><b>Figure 7:</b> Map of Median Salary per State </p>
 <div style="text-align: center;">
 <img width="900" alt="Screenshot 2024-12-10 at 1 03 52 PM" src="https://github.com/user-attachments/assets/6518fdc4-12c7-40cc-aacd-246fb5e290fd">
 </div>
@@ -189,13 +192,17 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
 
 <div align="justify">
     
-Figure 4 reveals the distribution of job availability across different industries. Industries like technology, business, and healthcare generally have the highest job frequencies, indicating these sectors are driving much of the job market. On the other hand, industries like retail and manufacturing appear to have significantly fewer job listings, suggesting either lower demand or a more stabilized workforce in these sectors. 
+Figure 4 reveals the frequency of job availability across different industries. Industries like technology, business, and healthcare generally have the highest job frequencies, indicating these sectors are driving much of the job market. On the other hand, industries like retail and manufacturing appear to have significantly fewer job listings, suggesting either lower demand or a more stabilized workforce in these sectors. 
 <br><br>
 Furthermore, Figure 5 shows significant variation in job availability across states. States typically having larger populations, such as California, Texas, and New York, exhibit a high density of job listings, reflecting their robust economies and diverse industries. In contrast, rural or less populous states like Wyoming and Vermont display fewer opportunities, possibly indicating limited industry presence or smaller labor markets. 
 <br><br>
-Additionally, Figure 6 graph highlights the proportion of job modes (e.g., remote, hybrid, on-site) in each state. Urban and economically developed states tend to have a higher percentage of remote and hybrid opportunities, likely due to the prevalence of tech-driven industries. Conversely, states with more traditional or labor-intensive industries, such as agriculture or manufacturing, lean towards on-site roles. This shows a clear divide between states embracing flexible work models and those maintaining traditional practices. 
+Additionally, Figure 6 highlights the proportion of job modes (e.g., remote, hybrid, on-site) in each state. Urban and economically developed states tend to have a higher percentage of remote and hybrid opportunities, likely due to the prevalence of tech-driven industries. Conversely, states with more traditional or labor-intensive industries, such as agriculture or manufacturing, lean towards on-site roles. This shows a clear divide between states embracing flexible work models and those maintaining traditional practices. 
 <br><br>
-Lastly, the salary map indicates that states like California, New York, and Washington offer the highest average salaries, often tied to their concentration of high-paying industries such as tech and finance. Meanwhile, states in the Midwest and South generally offer lower average salaries, reflecting regional economic disparities. Interestingly, some states with a lower cost of living may still provide competitive salaries in niche industries, presenting unique opportunities for job seekers.
+Lastly, Figure 7 indicates that states like California, New York, and Washington offer the highest average salaries, often tied to their concentration of high-paying industries such as tech and finance. Meanwhile, states in the Midwest and South generally offer lower average salaries, reflecting regional economic disparities. Interestingly, some states with a lower cost of living may still provide competitive salaries in niche industries, presenting unique opportunities for job seekers.
+<br><br>
+Our tables reveal that PwC leads in both job postings and median salary, with 500 listings and a median salary of $182.15k per year, highlighting its strong market presence and competitive compensation. In contrast, Walmart, despite being second in job postings, offers a significantly lower median salary of $40.56k per year, demonstrating variability in job quality among top employers. Additionally, the median salary across industries underscores the dominance of Law, Business, and Tech, with median salaries exceeding $120k, whereas Retail and Media have the lowest median salaries at $60k and $67.5k, respectively.
+
+These findings highlight key labor market trends: industries such as Law and Tech continue to attract top talent through high pay, while high-volume employers like Walmart prioritize volume hiring over competitive compensation. This disparity emphasizes the importance of balancing both job quantity and quality when evaluating employment opportunities.
 </div>
 
 ### VIII. Conclusions 
