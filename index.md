@@ -102,9 +102,11 @@ Yearly Salary = Hourly Rate 40 hours/week x 52 weeks/year
 We added two new columns: ‘Lower Range’ and ‘Upper Range’, corresponding to the minimum and maximum salaries. We then computed the mean salary for each job entry by averaging these two values and stored the results in a new column, ‘Mean Salary’.
 <br><br>
 <div style="text-align: center;">
+    <p style="text-align: center;"><strong>Figure 3</strong></p>
     <img width="500" alt="Screenshot 2024-12-10 at 3 31 32 PM" src="https://github.com/user-attachments/assets/ace6a103-b1b0-4e6d-ac52-d159ae7a9786">
 </div>
-To understand the distribution of mean salaries, we plotted a histogram. The distribution was found to be highly right-skewed, indicating the presence of extreme values (outliers) on the higher end of the salary scale. Given this skewness, the median was deemed a more appropriate measure of central tendency than the mean for calculations involving industry or state-level salary averages. Thus, median values were used in subsequent analyses to represent average salaries more accurately.
+
+To understand the distribution of mean salaries, we plotted a histogram, Figure 3. The distribution was found to be highly right-skewed, indicating the presence of extreme values (outliers) on the higher end of the salary scale. Given this skewness, the median was deemed a more appropriate measure of central tendency than the mean for calculations involving industry or state-level salary averages. Thus, median values were used in subsequent analyses to represent average salaries more accurately.
 </div>
 
 ### V. Challenges 
