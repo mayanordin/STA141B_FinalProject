@@ -5,6 +5,11 @@
 **Date:** December 11th, 2024  
 **By:** Maya Nordin and Ruba Thekkath  
 
+**Contributions**:
+
+Maya - Webscraped LinkedIn, helped merge and clean data sets, created interactive maps and plots, and aided in the process of writing the final report on Github. 
+
+Ruba - Webscraped Indeed, helped merge and clean data sets, created tables and interactive plots, uploaded code files to Github and aided in process of writing final report on Github. 
 ![Image for Title](https://www.talentlms.com/blog/wp-content/uploads/2022/09/remote-work-vs-work-from-home.png)
 
 ---
@@ -20,7 +25,7 @@ The shifting dynamics of the job market occur continuously, redefining tradition
 
 ### III. Data Sources
 <div align="justify">
-The data sets we will be using come from the following job boards: LinkedIn and Indeed. From each job board we collected the job title, the company the job belongs to, location, salary, and mode (remote, hybrid or in person). 
+The datasets we will be using come from the following job boards: LinkedIn and Indeed. From each job board, we collected the most recent job listings (as of Novemeber 2024), extracting the job title, company, location, salary, and work mode (remote, hybrid, or in-person).
 </div>
 
 ### IV. Methodology
@@ -38,7 +43,7 @@ Next, we navigated to LinkedIn and conducted job searches using the platform's t
 <br><br>
 We generated a total of 10 unique URLs, one for each industry, and used the Selenium WebDriver to open a browser instance for each link. From there, we iteratively scraped the job listings on each page. On average, each industry provided between 500 and 900 job postings. After consolidating the data from all industries, we successfully compiled a dataset containing 8,223 rows of job information. This took about 9 hours to get all the data as when using the Chrome Driver we needed to manually scroll through all the jobs so the website downloaded, meaning we could not leave the code running on its own. This process ensured we captured a broad and diverse range of job data, laying the groundwork for further analysis and insights into industry-specific trends. 
 <br><br>
-After retrieving the data, we utilized Pandas in order to store the data as a data frame with job title, job name, job location, job salary and job mode. This data frame would be used to merge with Indeed for further cleaning and plotting. 
+After retrieving the data (jobs stored in a structured format using Python dictionaries), we utilized Pandas in order to store the data as a data frame with job title, job name, job location, job salary and job mode. This data frame would be used to merge with Indeed for further cleaning and plotting. 
 </div>
 
 ### Web Scraping Indeed 
@@ -53,7 +58,7 @@ We also wanted to add a level of complexity and developed code for pagination, i
 On top of that, to make sure we could add variety in terms of the jobs we were scraping, we made code to randomly generate URL links that were combinations of different areas, jobs, and salary ranges. Then, we used those links as the link that the code would use to fetch and scrape data. The collected data is stored in a structured format using Python dictionaries and ultimately compiled into a pandas DataFrame. Finally, the script ensures efficient resource management by closing the browser once the process is complete, and we collected a total of 5,574 rows. 
 </div>
 
-### Combining and Cleaning Data Set 
+### Combining and Cleaning the Datasets
 
 <div align="justify">
 To combine the two datasets (one from LinkedIn and the other from Indeed), we first made sure that both datasets were aligned in terms of their structure. This meant that the column names were the same, the order of columns was consistent, and the data types (e.g., numbers, text) matched for corresponding columns in both datasets. Once the datasets were standardized in this way, we merged them into one unified dataset.
@@ -82,7 +87,7 @@ To categorize the jobs, we developed a keyword-based sorting approach. For examp
 After applying these criteria, we reviewed various results to address any misclassifications and refine our methodology. This process ensured that the dataset was well-structured for meaningful analysis and industry-specific insights.
 
 ### Mode of Work 
-In the original LinkedIn dataset, there was a "mode of work" column indicating whether a job was in-person, remote, or hybrid. However, this column was removed to facilitate merging with the Indeed dataset, as the Indeed data did not include information about the mode of work, nor did we scrape that information from their website.
+In the original LinkedIn dataset, there was a "mode of work" column indicating whether a job was in-person, remote, or hybrid. However, this column was removed to facilitate merging with the Indeed dataset, as the Indeed data did not include precise information about the mode of work or have a "mode of work" column. Instead, the "location" column indicated either a specific location or noted if the job was remote. 
 <br><br>
 To analyze whether jobs were in-person, remote, or hybrid after merging the datasets, we reintroduced the "mode of work" column, ensuring the data corresponded accurately to each job listing. For the Indeed jobs, we created a function to infer the mode of work: if the "location" column contained a specific address, the job was categorized as in-person, whereas if it indicated "remote," the job was classified as remote. This approach allowed us to standardize the mode of work data across the merged dataset.
 
@@ -109,7 +114,7 @@ To understand the distribution of mean salaries, we plotted a histogram. The dis
     
 The main challenges we faced were through web scraping and getting all the job data. The first issue we had was finding a way to access LinkedIn properly. We were able to get the chrome driver open, and open a separate chrome browser, but in order to use the search option, we needed to log in. First we tried using the guest option and searching through jobs there, but after the jobs loaded it would ask to either login or verify we weren’t a robot. In order to solve this problem, we ended up creating a new LinkedIn account to use in order to web scrape and were able to get through the login by implementing code that allowed for our username and password for the new LinkedIn account to be submitted. 
 <br><br>
-Another issue we had was getting our data. In the beginning we did not know that with a free linkedIn account, we were limited to 1000 jobs to scrape from each search we made. The pages went from 1 to 40 with 25 jobs on each page. Our aim was to get around 8000 rows. During our first round of getting data, we were able to get around 7000 rows. We then tested to see if there were any duplicates by changing our dictionary of jobs to a data frame. We checked to see if there were any duplicates and when taking away those duplicates (making sure that duplicates counted as the same job title, company, salary, mode and location), our data set came out to be only 25 rows meaning that our function was only scraping jobs from the first page and not moving to the second. To combat this challenge we added a try and except to allow for the computer to go on to the next page. This worked successfully. 
+Another issue we had was getting our data. In the beginning we did not know that with a free linkedIn account, we were limited to 1000 jobs to scrape from each search we made. The pages went from 1 to 40 with 25 jobs on each page. Our aim was to get around 8000 rows. During our first round of getting data, we were able to get around 7000 rows. We then tested to see if there were any duplicates by changing our dictionary of jobs to a data frame. We checked to see if there were any duplicates and when taking away those duplicates (making sure that duplicates counted as the same job title, company, salary, mode and location), our dataset came out to be only 25 rows meaning that our function was only scraping jobs from the first page and not moving to the second. To combat this challenge we added a try and except to allow for the computer to go on to the next page. This worked successfully. 
 </div>
 
 ### Indeed
