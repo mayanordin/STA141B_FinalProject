@@ -2,7 +2,7 @@
 
 **STA 141B Final Project**  
 **Professor:** Peter Kramlinger  
-**Date:** December 7, 2024  
+**Date:** December 11th, 2024  
 **Authors:** Maya Nordin and Ruba Thekkath  
 
 ---
