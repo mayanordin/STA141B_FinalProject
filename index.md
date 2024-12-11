@@ -5,9 +5,7 @@
 **Date:** December 11th, 2024  
 **By:** Maya Nordin and Ruba Thekkath  
 
-<div align="center">
-<img src="https://www.talentlms.com/blog/wp-content/uploads/2022/09/remote-work-vs-work-from-home.png" alt="Image for Title" width="500">
-</div>
+![Image for Title](https://www.talentlms.com/blog/wp-content/uploads/2022/09/remote-work-vs-work-from-home.png)
 
 ---
 ### I. Abstract
@@ -62,12 +60,12 @@ In order to combine the dates, we ensured that we had the same exact column name
 </div>
 <br><br>
 <div align="center">
-    <img width="900" alt="Original Data Pre-Clean" src="https://github.com/user-attachments/assets/4de260a1-2b7c-4ef7-afca-ef717cdf5c53">
+    <img width="1265" alt="Original Data Pre-Clean" src="https://github.com/user-attachments/assets/4de260a1-2b7c-4ef7-afca-ef717cdf5c53">
     <p><b>Figure 1:</b> Original Dataset after web scraping, cleaning, & merging </p>
 </div>
 
 <div align="center">
-    <img width="900" alt="Original Data Pre-Clean" src="https://github.com/user-attachments/assets/0cea2a78-d3ae-4124-be64-b048786ee7e2">
+    <img width="1265" alt="Original Data Pre-Clean" src="https://github.com/user-attachments/assets/0cea2a78-d3ae-4124-be64-b048786ee7e2">
     <p><b>Figure 2:</b> Final Dataset </p>
 </div>
 
@@ -82,7 +80,7 @@ Yearly Salary = Hourly Rate 40 hours/week x 52 weeks/year
 We added two new columns: ‘Lower Range’ and ‘Upper Range’, corresponding to the minimum and maximum salaries. We then computed the mean salary for each job entry by averaging these two values and stored the results in a new column, ‘Mean Salary’.
 <br><br>
 <div style="text-align: center;">
-    <img width="400" alt="Screenshot 2024-12-10 at 3 31 32 PM" src="https://github.com/user-attachments/assets/ace6a103-b1b0-4e6d-ac52-d159ae7a9786">
+    <img width="500" alt="Screenshot 2024-12-10 at 3 31 32 PM" src="https://github.com/user-attachments/assets/ace6a103-b1b0-4e6d-ac52-d159ae7a9786">
 </div>
 To understand the distribution of mean salaries, we plotted a histogram. The distribution was found to be highly right-skewed, indicating the presence of extreme values (outliers) on the higher end of the salary scale. Given this skewness, the median was deemed a more appropriate measure of central tendency than the mean for calculations involving industry or state-level salary averages. Thus, median values were used in subsequent analyses to represent average salaries more accurately.
 </div>
@@ -109,46 +107,89 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
 ### VI. Findings
 <p><b>Figure 4:</b> Frequency of Jobs in Each Industry </p>
 <div style="text-align: center;">
-<img width="800" alt="Screenshot 2024-12-10 at 11 31 17 AM" src="https://github.com/user-attachments/assets/b937b6f1-b4b9-476e-a465-2f979e698ea6">
+<img width="1265" alt="Screenshot 2024-12-10 at 11 31 17 AM" src="https://github.com/user-attachments/assets/b937b6f1-b4b9-476e-a465-2f979e698ea6">
 </div>
 
 <a href="https://mayanordin.github.io/STA141B_FinalProject/bar_freq_jobs.html">
-    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="100">
+    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
 <br><br>
 <p><b>Figure 5:</b> Map of Number of Jobs Per State </p>
 <div style="text-align: center;">
-<img width="500" alt="Screenshot 2024-12-10 at 11 31 41 AM" src="https://github.com/user-attachments/assets/867719a7-b003-484f-b6a8-a80520d55dde">
+<img width="900" alt="Screenshot 2024-12-10 at 11 31 41 AM" src="https://github.com/user-attachments/assets/867719a7-b003-484f-b6a8-a80520d55dde">
 </div>
 
 <a href="https://mayanordin.github.io/STA141B_FinalProject/map_job_count.html">
-    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="100">
+    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
 <br><br>
 <p><b>Figure 6:</b> Percentage of Job Modes per State </p>
 
 <div align="center">
-<img width="800" alt="Screenshot 2024-12-10 at 11 32 05 AM" src="https://github.com/user-attachments/assets/6238ebdc-2d1e-4d96-9ff8-bf0c8ca23d4e">
+<img width="1265" alt="Screenshot 2024-12-10 at 11 32 05 AM" src="https://github.com/user-attachments/assets/6238ebdc-2d1e-4d96-9ff8-bf0c8ca23d4e">
 </div>
 
 <a href="https://mayanordin.github.io/STA141B_FinalProject/percent_job_modes.html">
-    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="100">
+    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
 <br><br> 
 <p><b>Figure 7:</b> Map of Median Salary per State </p>
 <div style="text-align: center;">
-<img width="500" alt="Screenshot 2024-12-10 at 1 03 52 PM" src="https://github.com/user-attachments/assets/6518fdc4-12c7-40cc-aacd-246fb5e290fd">
+<img width="900" alt="Screenshot 2024-12-10 at 1 03 52 PM" src="https://github.com/user-attachments/assets/6518fdc4-12c7-40cc-aacd-246fb5e290fd">
 </div>
 
 <a href="https://mayanordin.github.io/STA141B_FinalProject/salary_map-2.html">
-    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="100">
+    <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
 
-<img width="804" alt="Screenshot 2024-12-10 at 11 13 15 PM" src="https://github.com/user-attachments/assets/3bea588b-79a7-4f93-8efa-da5fb618f317">
-
-
 <br><br> 
+<p><b>Table 1:</b> Top 10 Companies Posting Jobs  </p>
 
+| Rank | Company Name          | Number of Job Postings |
+|------|-----------------------|------------------------|
+| 1    | PwC                  | 500                    |
+| 2    | Walmart              | 285                    |
+| 3    | Jobs via Dice        | 265                    |
+| 4    | Whole Foods Market   | 165                    |
+| 5    | CyberCoders          | 156                    |
+| 6    | Deloitte             | 153                    |
+| 7    | Class A Drivers      | 149                    |
+| 8    | The Job Network      | 139                    |
+| 9    | Total Quality Logistics | 115                |
+| 10   | Amazon               | 101                    |
+
+---
+
+<p><b>Table 2:</b> Median Salary by Industry   </p>
+
+| Rank | Industry          | Median Salary (k USD) |
+|------|-------------------|-----------------------|
+| 1    | Law               | 133.1500             |
+| 2    | Business          | 122.2000             |
+| 3    | Tech              | 120.0000             |
+| 4    | Health            | 101.0860             |
+| 5    | Other             | 95.0000              |
+| 6    | Education         | 88.2232              |
+| 7    | Manufacturing     | 71.5000              |
+| 8    | Media             | 67.5000              |
+| 9    | Retail            | 60.0000              |
+
+---
+
+<p><b>Table 3:</b> Median Salary of Top 10 Companies </p>
+
+| Rank | Company Name          | Median Salary USD (k/yr) |
+|------|-----------------------|--------------------------|
+| 1    | PwC                  | 182.1500                |
+| 2    | Deloitte             | 166.6000                |
+| 3    | Amazon               | 160.0500                |
+| 4    | Jobs via Dice        | 144.1000                |
+| 5    | CyberCoders          | 120.0000                |
+| 6    | The Job Network      | 114.7224                |
+| 7    | Class A Drivers      | 61.9000                 |
+| 8    | Whole Foods Market   | 49.6080                 |
+| 9    | Walmart              | 40.5600                 |
+| 10   | Total Quality Logistics | 7.5000               |
 
 ### VII. Analysis 
 
