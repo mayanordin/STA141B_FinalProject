@@ -138,54 +138,73 @@ Then, the next challenge was designing a scraping pipeline capable of navigating
     <img src="https://img.shields.io/badge/View-Visualization-blue" alt="View Visualization" width="200">
 </a>
 
+<table>
+  <tr>
+    <th>Table 1: Top 10 Companies Posting Jobs</th>
+    <th>Table 2: Median Salary by Industry</th>
+    <th>Table 3: Median Salary of Top 10 Companies</th>
+  </tr>
+  <tr>
+    <td>
+      <table border="1">
+        <tr>
+          <th>Rank</th>
+          <th>Company Name</th>
+          <th>Number of Job Postings</th>
+        </tr>
+        <tr><td>1</td><td>PwC</td><td>500</td></tr>
+        <tr><td>2</td><td>Walmart</td><td>285</td></tr>
+        <tr><td>3</td><td>Jobs via Dice</td><td>265</td></tr>
+        <tr><td>4</td><td>Whole Foods Market</td><td>165</td></tr>
+        <tr><td>5</td><td>CyberCoders</td><td>156</td></tr>
+        <tr><td>6</td><td>Deloitte</td><td>153</td></tr>
+        <tr><td>7</td><td>Class A Drivers</td><td>149</td></tr>
+        <tr><td>8</td><td>The Job Network</td><td>139</td></tr>
+        <tr><td>9</td><td>Total Quality Logistics</td><td>115</td></tr>
+        <tr><td>10</td><td>Amazon</td><td>101</td></tr>
+      </table>
+    </td>
+    <td>
+      <table border="1">
+        <tr>
+          <th>Rank</th>
+          <th>Industry</th>
+          <th>Median Salary (k USD)</th>
+        </tr>
+        <tr><td>1</td><td>Law</td><td>133.1500</td></tr>
+        <tr><td>2</td><td>Business</td><td>122.2000</td></tr>
+        <tr><td>3</td><td>Tech</td><td>120.0000</td></tr>
+        <tr><td>4</td><td>Health</td><td>101.0860</td></tr>
+        <tr><td>5</td><td>Other</td><td>95.0000</td></tr>
+        <tr><td>6</td><td>Education</td><td>88.2232</td></tr>
+        <tr><td>7</td><td>Manufacturing</td><td>71.5000</td></tr>
+        <tr><td>8</td><td>Media</td><td>67.5000</td></tr>
+        <tr><td>9</td><td>Retail</td><td>60.0000</td></tr>
+      </table>
+    </td>
+    <td>
+      <table border="1">
+        <tr>
+          <th>Rank</th>
+          <th>Company Name</th>
+          <th>Median Salary USD (k/yr)</th>
+        </tr>
+        <tr><td>1</td><td>PwC</td><td>182.1500</td></tr>
+        <tr><td>2</td><td>Deloitte</td><td>166.6000</td></tr>
+        <tr><td>3</td><td>Amazon</td><td>160.0500</td></tr>
+        <tr><td>4</td><td>Jobs via Dice</td><td>144.1000</td></tr>
+        <tr><td>5</td><td>CyberCoders</td><td>120.0000</td></tr>
+        <tr><td>6</td><td>The Job Network</td><td>114.7224</td></tr>
+        <tr><td>7</td><td>Class A Drivers</td><td>61.9000</td></tr>
+        <tr><td>8</td><td>Whole Foods Market</td><td>49.6080</td></tr>
+        <tr><td>9</td><td>Walmart</td><td>40.5600</td></tr>
+        <tr><td>10</td><td>Total Quality Logistics</td><td>7.5000</td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
 <br><br> 
-<p><b>Table 1:</b> Top 10 Companies Posting Jobs  </p>
-
-| Rank | Company Name          | Number of Job Postings |
-|------|-----------------------|------------------------|
-| 1    | PwC                  | 500                    |
-| 2    | Walmart              | 285                    |
-| 3    | Jobs via Dice        | 265                    |
-| 4    | Whole Foods Market   | 165                    |
-| 5    | CyberCoders          | 156                    |
-| 6    | Deloitte             | 153                    |
-| 7    | Class A Drivers      | 149                    |
-| 8    | The Job Network      | 139                    |
-| 9    | Total Quality Logistics | 115                |
-| 10   | Amazon               | 101                    |
-
----
-
-<p><b>Table 2:</b> Median Salary by Industry   </p>
-
-| Rank | Industry          | Median Salary (k USD) |
-|------|-------------------|-----------------------|
-| 1    | Law               | 133.1500             |
-| 2    | Business          | 122.2000             |
-| 3    | Tech              | 120.0000             |
-| 4    | Health            | 101.0860             |
-| 5    | Other             | 95.0000              |
-| 6    | Education         | 88.2232              |
-| 7    | Manufacturing     | 71.5000              |
-| 8    | Media             | 67.5000              |
-| 9    | Retail            | 60.0000              |
-
----
-
-<p><b>Table 3:</b> Median Salary of Top 10 Companies </p>
-
-| Rank | Company Name          | Median Salary USD (k/yr) |
-|------|-----------------------|--------------------------|
-| 1    | PwC                  | 182.1500                |
-| 2    | Deloitte             | 166.6000                |
-| 3    | Amazon               | 160.0500                |
-| 4    | Jobs via Dice        | 144.1000                |
-| 5    | CyberCoders          | 120.0000                |
-| 6    | The Job Network      | 114.7224                |
-| 7    | Class A Drivers      | 61.9000                 |
-| 8    | Whole Foods Market   | 49.6080                 |
-| 9    | Walmart              | 40.5600                 |
-| 10   | Total Quality Logistics | 7.5000               |
 
 
 ### VII. Analysis 
